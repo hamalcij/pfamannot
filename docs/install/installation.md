@@ -12,7 +12,7 @@
 If the requirements specified [here](requirements.md) are being met, you
 may continue with the installation of `pfamannot`.
 First of all, download the [archive](https://github.com/hamalcij/pfamannot/archive/master.zip)
-with `pfamannot`'s source from GitLab, navigate to your Downloads folder,
+with `pfamannot`'s source from GitHub, navigate to your Downloads folder,
 extract the .zip file and change current directory to the extracted
 folder by typing into the command line:
 ```
