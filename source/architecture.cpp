@@ -2,7 +2,7 @@
 // Protein Family Annotator
 //
 // source/architecture.cpp
-// Jan Hamalcik
+// Copyright (c) 2020 Jan Hamalčík
 //
 // Set of domains
 //

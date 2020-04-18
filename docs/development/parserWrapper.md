@@ -2,7 +2,7 @@
 [//]: # (Protein Family Annotator)
 [//]: # ()
 [//]: # (docs/development/parserWrapper.md)
-[//]: # (Jan Hamalcik)
+[//]: # (Copyright (c) 2020 Jan Hamalčík)
 [//]: # ()
 [//]: # (Programmer's documentation of ParserWrapper class)
 [//]: # ()

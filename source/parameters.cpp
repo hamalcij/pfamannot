@@ -2,7 +2,7 @@
 // Protein Family Annotator
 //
 // source/parameters.cpp
-// Jan Hamalcik
+// Copyright (c) 2020 Jan Hamalčík
 //
 // Data structure containing all information about program's parameters.
 //

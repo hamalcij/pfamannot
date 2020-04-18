@@ -2,7 +2,7 @@
 // Protein Family Annotator
 //
 // source/flowController.h
-// Jan Hamalcik
+// Copyright (c) 2020 Jan Hamalčík
 //
 // Communicates with the user and based on user's answers controlls the flow of pfamannot
 //
@@ -45,6 +45,6 @@ private:
   const std::string uniprotFileLongOption_{"--uniprot-file"};
   const char* pfamAFullFTP_{"ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.full.gz"};
   const char* uniprotReferenceProteomesFTP_{"ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/uniprot_reference_proteomes.dat.gz"};
-  
+
   static const int standardPfamIDLength_{7};
 };

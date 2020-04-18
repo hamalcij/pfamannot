@@ -2,7 +2,7 @@
 [//]: # (Protein Family Annotator)
 [//]: # ()
 [//]: # (docs/user/examples.md)
-[//]: # (Jan Hamalcik)
+[//]: # (Copyright (c) 2020 Jan Hamalčík)
 [//]: # ()
 [//]: # (Gives some correct and incorrect example of pfamannot's call)
 [//]: # ()

@@ -2,7 +2,7 @@
 # Protein Family Annotator
 #
 # Makefile.in
-# Jan Hamalcik
+# Copyright (c) 2020 Jan Hamalčík
 #
 # Makefile template for pfamannot
 #

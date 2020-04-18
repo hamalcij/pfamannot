@@ -2,7 +2,7 @@
 [//]: # (Protein Family Annotator)
 [//]: # ()
 [//]: # (README.md)
-[//]: # (Jan Hamalcik)
+[//]: # (Copyright (c) 2020 Jan Hamalčík)
 [//]: # ()
 [//]: # (Contains basic information about pfamannot's usage and installation)
 [//]: # ()
@@ -53,8 +53,8 @@ knowledge of `pfamannot`'s source code.
 
 ## License
 
-Read [legal documents](docs/legal) to get informed about licensing,
-distribution and allowed usage of `pfamannot`.
+Read [LICENSE](LICENSE) to get informed about licensing, distribution and allowed usage
+of `pfamannot`.
 
 ## Authors
 

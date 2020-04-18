@@ -2,7 +2,7 @@
 // Protein Family Annotator
 //
 // source/main.cpp
-// Jan Hamalcik
+// Copyright (c) 2020 Jan Hamalčík
 //
 // Includes main() function, therefore starts the program
 //

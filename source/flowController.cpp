@@ -2,7 +2,7 @@
 // Protein Family Annotator
 //
 // source/flowController.cpp
-// Jan Hamalcik
+// Copyright (c) 2020 Jan Hamalčík
 //
 // Communicates with the user and based on user's answers controlls the flow of pfamannot
 //

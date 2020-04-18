@@ -2,7 +2,7 @@
 // Protein Family Annotator
 //
 // source/downloader.cpp
-// Jan Hamalcik
+// Copyright (c) 2020 Jan Hamalčík
 //
 // Downloads a text file from FTP or HTTP
 //

@@ -4,7 +4,7 @@
 # Protein Family Annotator
 #
 # configure
-# Jan Hamalcik
+# Copyright (c) 2020 Jan Hamalčík
 #
 # Generates Makefile
 #
@@ -198,7 +198,7 @@ echo '# pfamannot' > Makefile
 echo '# Protein Family Annotator' >> Makefile
 echo '#' >> Makefile
 echo '# Makefile' >> Makefile
-echo '# Jan Hamalcik' >> Makefile
+echo '# Copyright (c) 2020 Jan Hamalčík' >> Makefile
 echo '#' >> Makefile
 echo '# Makefile for pfamannot' >> Makefile
 echo '#' >> Makefile

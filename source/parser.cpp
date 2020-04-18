@@ -2,7 +2,7 @@
 // Protein Family Annotator
 //
 // source/parser.cpp
-// Jan Hamalcik
+// Copyright (c) 2020 Jan Hamalčík
 //
 // Parses files Pfam-A.full and uniprot_reference_proteomes.dat and creates output consisting of annotated proteins containing domains from user input
 //
