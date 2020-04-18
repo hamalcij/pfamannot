@@ -1,0 +1,13 @@
+// pfamannot
+// Protein Family Annotator
+//
+// source/pfamannotConfig.hpp.in
+// Jan Hamalcik
+//
+// The configured options and settings for pfamannot
+//
+
+#define VERSION_MAJOR §major§
+#define VERSION_MINOR §minor§
+#define VERSION_PATCH §patch§
+#define HOME_DIRECTORY §home§

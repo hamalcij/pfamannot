@@ -1,0 +1,59 @@
+# STOCKHOLM 1.0
+#=GF ID   120_Rick_ant
+#=GF AC   PF12574.8
+#=GF DE   120 KDa Rickettsia surface antigen
+#=GF AU   Gavin OL;
+#=GF SE   Prosite
+#=GF GA   25.00 25.00;
+#=GF TC   28.40 28.20;
+#=GF NC   23.50 22.30;
+#=GF BM   hmmbuild HMM.ann SEED.ann
+#=GF SM   hmmsearch -Z 45638612 -E 1000 --cpu 4 HMM pfamseq
+#=GF TP   Family
+#=GF RN   [1]
+#=GF RM   8112862
+#=GF RT   Cloning, sequencing, and expression of the gene coding for an
+#=GF RT   antigenic 120-kilodalton protein of Rickettsia conorii.
+#=GF RA   Schuenke KW, Walker DH;
+#=GF RL   Infect Immun. 1994;62:904-909.
+#=GF DR   INTERPRO; IPR020954;
+#=GF DR   SO; 0100021; polypeptide_conserved_region;
+#=GF CC   This domain family is found in bacteria, and is approximately 40
+#=GF CC   amino acids in length. This family is a Rickettsia surface
+#=GF CC   antigen of 120 KDa which may be used as an antigen for immune
+#=GF CC   response against the bacterial species.
+#=GF SQ   16
+#=GS A0A0F3R0S1_ORITS/31-131   AC A0A0F3R0S1.1
+#=GS A0A0F3QXX2_ORITS/1-133    AC A0A0F3QXX2.1
+#=GS A0A0F3MK43_9RICK/404-636  AC A0A0F3MK43.1
+#=GS Q1RJ37_RICBR/189-408      AC Q1RJ37.1
+#=GS A0A0F3MH25_ORITS/577-813  AC A0A0F3MH25.1
+#=GS A0A2A5BBI9_9RICK/282-487  AC A0A2A5BBI9.1
+#=GS H8K5G2_RICAG/113-350      AC H8K5G2.1
+#=GS A0A0F3RQ37_ORITS/508-742  AC A0A0F3RQ37.1
+#=GS SCA4_RICPR/102-337        AC Q9ZD49.2
+#=GS A0A261DCJ7_9RICK/496-744  AC A0A261DCJ7.1
+#=GS Q1RGU6_RICBR/7-173        AC Q1RGU6.1
+#=GS A0A0F3PKL7_9RICK/1-218    AC A0A0F3PKL7.1
+#=GS Q1RIG4_RICBR/188-417      AC Q1RIG4.1
+#=GS A0A261DC17_9RICK/186-418  AC A0A261DC17.1
+#=GS A0A0F3PNG3_9RICK/1-78     AC A0A0F3PNG3.1
+#=GS A5CDE1_ORITB/318-554      AC A5CDE1.1
+A0A0F3R0S1_ORITS/31-131              ............................................IAEDDSFKIWQLQNPSKSLDDFKRDTTQMDSL......SQETKELLSSLGSEGYANIMGSAANIDPAQ...QMSFAASFSTLDWDTH..A..NSVGNT.IQKLL--------.-----------...---------.-.-.------------------------------------------..---....---......-----------.--------------------------------------------------------pmmlvkklqtl........
+A0A0F3QXX2_ORITS/1-133               ...........................................m--------------------------------......------------------------------...----------------..-..------.-------------.-------HKTQ...LSANVNGVT.K.T.VTKHRTIDIPSAVEENKGPLDLALVAQDATGKNMSESKAVYL..TAH....YNQ......EGKLVEITHPE.PMLFFSDKPSSPAYTVINNEVYTLPITKEKYEQLTKEISQNIQEQ-DKDK------ereqeavdk..........
+A0A0F3MK43_9RICK/404-636             ............................................ILEDESFKKWQEQNQNKTLDDFKHSAAQMDNL......TPETKELISKLGAAGYANILGSGANIEQAQ...EMSFAASFCTLDWATQ..S..NAVGNT.TRKTITNEAGEKV.VDLVSHSHSVQ...LSASVNGAT.K.T.ITKCRTIDIPSTVE--KGPLDLALVAQDSTGKNMPESKAVYF..TVH....YDQ......DGKIVEMTHPE.PLKFFSETPSSPAYTVINGEIFTLPITKEKYEQLHKEISQNMEEQYAKDHQLAADK...................
+Q1RJ37_RICBR/189-408                 sssvnqyehnpppvpkraeskqeatglksffkgmfskapeasta--------------------------------......------------------------------...---PKAALVPVVAPKV..T..SSNISY.RDILLRDQEHPEIaLKLQEATINTN...LTIRVNGQH.IfE.VKQYRAVKIPNALENIKTP-TIKFVFSYLNGVKLSDEFAIHTkgTAHlkldYNA......NGRLEKLTLPN.QPIYFKDKPGYPAFCIFKKIMCSLPVDSGQLGHLMQ--------------------iapkvefnnvdeytykvel
+A0A0F3MH25_ORITS/577-813             ............................................IAEDNKFKAWQQQNPSKSLDDFKHDSTQMDSL......SQETKELLSNLGSAGYANIMGSTANIEQAQ...QMSFAASFSTLDWDTQ..A..NSVGST.TQKTITNDAGEKV.TDLISHSHKTQ...LSASVNGVT.K.T.VTKHRTIDIPRAVEENKGPLDLALVAQDETGKNMSESKAVYL..TAH....YNQ......EGKLVEMTHPE.PMKFFSDDPGSPAYTVINNEVYTLPITREKYDQLTKEISQNIQEQ-DKDK------ereqeavdk..........
+A0A2A5BBI9_9RICK/282-487             ....efrdylnskqgrgqaelalqnsgvqaeiqridlegyrsvh--------------------------------......------------------------------...-YDFKDRFRNVEWEKK..-..----DT.TSTSIVKDGDREI.CKLTETIVNIP..gQFVTANGEQ.V.E.VTSYRKINFPISLE-NGGPMHLSMAVKDQHGKNISKQDAVYF..TAH....YNE......EGKLMELSSPV.PVKFAGEGGDAIGYIERGGKIYTLPVTRANYQAMMHEVGINNGLSTNLSQTL----psp................
+H8K5G2_RICAG/113-350                 ............................................LAEQKRKEIEEEKEKDKTLSTFFGNPANREFIdk.aleNPELKKKLESIEIAGYKNVHNTFSAAS---...--GYPGGFKPVQWENQ..V..SAN-DL.RATVVKNDAGDEL.CTLNETTVKTKp.fTVAKQDGTQ.V.Q.ISSYREIDFPIKLDKADGSMHLSMVALKADGTKPSKDKAVYF..TAH....YEEgp..ngKPQLKEISSPK.PLKFAGTGDDAIAYIEHGGEIYTLAVTRGKYKEMMKEVELNQGQSVDLSQ--AEDI...................
+A0A0F3RQ37_ORITS/508-742             ............................................IAEDDSFKIWQLQNPSKSLDDFKRDTTQMDSL......SQETKELLSSLGSEGYANIMGSAANIDPAQ...QMSFATSFSTLDWATH..A..NFVGNT.TQKTITNDAGEKV.TDLISHSHKTQ...LSASVNGVT.K.T.VTKHRTIDIPRAVEENKGPLDLALVAQDATGKNMSESKAVYL..TAH....YNQ......EGKIVEMTHPE.PMKFFSDDPDSPAYTVINNEVYTLPITREKYDQLTKEISQNIQEQ-DKDKDI----eheam..............
+SCA4_RICPR/102-337                   ..........................................el-AEQIAKE-----EDDRKFRAFLSNQDNYALInk.afeDTKTKKNLEKAEIVGYKNVLSTYSVAN---...--GYQGGFQPVQWENQ..V..SAS-DL.RSTVVKNDEGEEL.CTLNETTVKTKd.lIVAKQDGTQ.V.Q.INSYREINFPIKLDKANGSMHLSMVALKADGTKPAKDKAVYF..TAH....YEEgp..ngKPQLKEISSPQ.PLKFVGTGDDAVAYIEHGGEIYTLAVTRGKYKEMMKEVALNHGQSVALSQTIAEDL...................
+A0A261DCJ7_9RICK/496-744             .........rqeiiakqqttlknilaeanitaisvtnlainsqq----------------------------FKEF......VENNNELIQKTWASSITKSTVTQAMNDEVQsyaKIHHANNFKPLTWSNQ..TpiDNTTDT.RSRVIKVK-DEEL.FKLTETKVKTS..tKVILEDGVT.E.TeISNYRNINLPLAIKPSGTAVHLSFPVQNEKGENIEVSKALYF..TTH....YNE......QGKLVEITNPL.SLKFTSDDKNAMGYIQRGKHIYTIPVTKGQYEAMLQEVAKNQGCNINISQTIP---seas...............
+Q1RGU6_RICBR/7-173                   ...........lttstteevvtdagdktkviikpntvntedhki--------------------------------......------------------------------...----------------..-..------.--RPLINKQNKYY.GEIQEDTINTM...LKYRFNGNKiV.E.VTKYKSFTIPSTIL-PGEKFELN----CPNGEKIRADDTAYL..QVN....YDI......SGKLVKLAIPN.Q-PVVCHNPSYPALIAYHNELYVLPVNSGHYNYLTYKVHENG--------------gvvei..............
+A0A0F3PKL7_9RICK/1-218               ...........................................m-----------------------SNQDNQGLInk.afeDLETKKRLEAAEIAGYKNVLSTYSAAN---...--GYQGGFKPVQWENP..I..SAS-DL.RATVVRNDAGDEL.CTLNETTVKTKp.fTVAKQDGTQ.V.Q.ISSYREIDFPIKLDKADGSMHLSIVALKADGTKPSKDKAVYF..TAH....YEEgk..dgKPQLKEISSPQ.PLKFAGDGPDAVAYIEHGGEIYTLAVTRGKYQEMMQEVKLNQGQSVDLSQTIAEDL...................
+Q1RIG4_RICBR/188-417                 ..lnndpayseeakdqekfrqflanlnagerqglydkalsdeqf--------------------------------......-------------------KGQYENIRQEY...ANKYVGGFRSMQWENQ..V..SAG-DL.RSTVIKNDAGEEI.CTLAEKTHKTAp.mTVYKQDGTA.V.T.VNSYRTIDFPIDLEGKSGTMHLSLVAQNKEGKS---NNALRF..TAH....YEAdphpdgTPKLKEVSSPQ.PIKFMGKDENAVGYIEHGGEIYTLPVTRGKYEAMMKEVAVNKGQGVDVSQTIEQDI...................
+A0A261DC17_9RICK/186-418             ......................................lvnksi-------AKPEELDDLNKFRAYFENEQNKETIsgllkeDQNLKHALEQVEIAGYKNVHT---------...--QFAGRFSTMEWKDGgvE..NANGITiKKQIVRDANGHEI.ATLSEANHQINpphTVQKSDGTS.V.A.ISNYRTIDFPIKLD-NNGPMHLSLAVKDQYGKNIAASNAVYF..TAH....YDD......AGKLIEVSSPH.PVKFTGNSPDAVGYIEHGGKIYTLPVTQEKYRSMMQEVAKNLGQGVNISPS-----iesi...............
+A0A0F3PNG3_9RICK/1-78                ............................................--------------------------------......------------------------------...----------------..-..------.-------------.-----------...---------.-.-.---------------------------------MSKDDPAFL..KIH....YGR......DGKLNKLSLPNtPIIFYNQ--WYPALTVYKGKLCSLPVSSGYYKYLHKKILENNGT------------ieidhidre..........
+A5CDE1_ORITB/318-554                 ............................................IAEDDKFKVWQQQNPSKSLDDFKRDTTQIDSL......SQETKELLSGIGSAGYANIMGSTANIEQAQ...QMSFAASFSTLDWATH..A..NSVGNT.TQKTITNDAGEKV.TDLISHSHKTQ...LSASVNGVT.K.I.VTKHRTIDIPRAVEENKGPLDLALVAQDTTGKNMPESKAVYL..TAH....YNQ......EGKLVEMTHPE.PLRFFSDEPGSPAYTVINNEVYTLPITREKYDQLTKEISQNIQEQ-DKDK------ereqeavdk..........
+#=GC seq_cons                        .........................................................................t.h......s.p.pc.lpth...uhtp.hsp.t..p........tatuuFpslpWtsp..s..sus.sh.pppslpsctsccl.spL.ppohpTp...hshp.sGsp.h.p.lopaRsIchPhsl-.spGshcLuhVspctsGcphucscAVYh..TAH....Ysp......cGKLhElopPp.PlKFhucsssusAYh.hssElYTLPVT+tKYcphh+Elu.N.tpp.shsp.........................
+//

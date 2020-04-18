@@ -1,0 +1,60 @@
+# pfamannot
+# Protein Family Annotator
+#
+# Makefile.in
+# Jan Hamalcik
+#
+# Makefile template for pfamannot
+#
+
+CURL = curl-7.69.1
+ZLIB = zlib-1.2.11
+PROG = pfamannot
+CXX = g++
+CXXFLAGS = -std=c++17 $(DEBUG)
+LDFLAGS = -lz -lcurl
+SRC = $(wildcard source/*.cpp)
+OBJ = $(SRC:.cpp=.o)
+DEP = $(OBJ:.o=.d)
+
+ifeq ($(CURL_EXISTS),false)
+	INSTALL_CURL = cd $(CURL) && ./configure && make && sudo make install
+else
+	INSTALL_CURL =
+endif
+
+ifeq ($(ZLIB_EXISTS),false)
+	INSTALL_ZLIB = cd $(ZLIB) && ./configure && make && sudo make install
+else
+	INSTALL_ZLIB =
+endif
+
+all:
+	$(INSTALL_ZLIB)
+	$(INSTALL_CURL)
+	make $(PROG)
+
+$(PROG): $(OBJ)
+	$(CXX) -o $@ $^ $(LDFLAGS)
+
+-include $(DEP)
+
+%.d: %.cpp
+	$(CPP) $(CXXFLAGS) $< -MM -MT $(@:.d=.o) >$@
+
+.PHONY: clean
+clean:
+	rm -f $(OBJ) $(PROG)
+
+.PHONY: cleandep
+cleandep:
+	rm -f $(DEP)
+
+.PHONY: install
+install: $(PROG)
+	mkdir -p $(PREFIX)/bin
+	cp $< $(PREFIX)/bin/$(PROG)
+
+.PHONY: uninstall
+uninstall:
+	rm -f $(PREFIX)/bin/$(PROG)

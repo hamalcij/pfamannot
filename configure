@@ -1,0 +1,230 @@
+#!/bin/sh
+#
+# pfamannot
+# Protein Family Annotator
+#
+# configure
+# Jan Hamalcik
+#
+# Generates Makefile
+#
+
+version_major=0
+version_minor=1
+version_patch=4
+
+echo "Welcome to pfamannot - Protein Family Annotator! Version ${version_major}.${version_minor}.${version_patch}"
+echo "Configuring..."
+echo
+
+prefix=/usr/local
+debugsym=false
+
+for arg in $@;
+do
+  case "$arg" in
+    --prefix=*)
+      prefix=`echo $arg | sed 's/--prefix=//'`
+      ;;
+
+    --enable-debug)
+      debugsym=true
+      ;;
+
+    --disable-debug)
+      debugsym=false
+      ;;
+
+    --help)
+      echo 'Usage: ./configure [options]'
+      echo 'Options:'
+      echo '  --prefix=<path>: Installation prefix (DEFAULT = "/usr/local")'
+      echo '  --enable-debug: Include debug symbols'
+      echo '  --disable-debug: Do not include debug symbols (DEFAULT)'
+      echo 'All invalid options are silently ignored.'
+      exit 0
+      ;;
+  esac
+done
+
+##################################
+# Get cpp info
+
+cpp -v /dev/null -o /dev/null > cpp_info 2>&1
+include_path=""
+library_path=""
+inside_include=false
+while IFS= read -r line;
+do
+  if $inside_include;
+  then
+    if [ "`echo $line`" = "End of search list." ] ;
+    then
+      inside_include=false
+      continue
+    fi
+    path="`echo $line`"
+    include_path="${path}:${include_path}"
+  else
+    if [ "$line" = "#include <...> search starts here:" ] ;
+    then
+      inside_include=true
+    elif [ "`echo $line | head -c13`" = "LIBRARY_PATH=" ] ;
+    then
+      library_path="`echo $line | tail -c+14`"
+    fi
+  fi
+done < cpp_info
+rm cpp_info
+
+if [ "$include_path" = "" ] ;
+then
+  include_path="/usr/include:/usr/local/include"
+else
+  include_path="`echo $include_path | rev | tail -c+2 | rev`"
+fi
+
+if [ "$library_path" = "" ] ;
+then
+  library_path="/usr/lib:/usr/local/lib"
+fi
+
+##################################
+# Check for curl
+
+printf "Checking for curl..."
+
+curl_exists=false
+include_curl_exists=false
+library_curl_exists=false
+
+IFS=:
+for path in $include_path;
+do
+  if [ -f "${path}/curl/curl.h" ];
+  then
+    include_curl_exists=true
+    break
+  fi
+done
+
+for path in $library_path;
+do
+  for file in ${path}/libcurl.*;
+  do
+    if [ -f "$file" ];
+    then
+      library_curl_exists=true
+      break
+    fi
+  done
+  if $library_curl_exists;
+  then
+    break
+  fi
+done
+IFS=$'\n'
+
+if $include_curl_exists && $library_curl_exists;
+then
+  curl_exists=true
+  echo " -> yes"
+else
+  echo " -> no"
+fi
+
+##################################
+# Check for zlib
+
+printf "Checking for zlib..."
+
+zlib_exists=false
+include_zlib_exists=false
+library_zlib_exists=false
+
+IFS=:
+for path in $include_path;
+do
+  if [ -f "${path}/zlib.h" ];
+  then
+    include_zlib_exists=true
+    break
+  fi
+done
+
+for path in $library_path;
+do
+  for file in ${path}/libz.*;
+  do
+    if [ -f "$file" ];
+    then
+      library_zlib_exists=true
+      break
+    fi
+  done
+  if $library_zlib_exists;
+  then
+    break
+  fi
+done
+IFS=$'\n'
+
+if $include_zlib_exists && $library_zlib_exists;
+then
+  zlib_exists=true
+  echo " -> yes"
+else
+  echo " -> no"
+fi
+
+##################################
+# Create pfamannotConfig.hpp
+
+cat source/pfamannotConfig.hpp.in |
+sed 's/pfamannotConfig.hpp.in/pfamannotConfig.hpp/' |
+sed 's/§major§/'$version_major'/' |
+sed 's/§minor§/'$version_minor'/' |
+sed 's/§patch§/'$version_patch'/' |
+sed 's|§home§|"'$HOME'"|' > source/pfamannotConfig.hpp
+
+##################################
+# Create Makefile
+
+echo
+echo 'Generating makefile...'
+
+# Header
+echo '# pfamannot' > Makefile
+echo '# Protein Family Annotator' >> Makefile
+echo '#' >> Makefile
+echo '# Makefile' >> Makefile
+echo '# Jan Hamalcik' >> Makefile
+echo '#' >> Makefile
+echo '# Makefile for pfamannot' >> Makefile
+echo '#' >> Makefile
+echo >> Makefile
+
+# Body
+echo 'PREFIX =' $prefix >> Makefile
+if $debugsym;
+then
+  echo 'DEBUG = -g3' >> Makefile
+else
+  echo 'DEBUG =' >> Makefile
+fi
+if $curl_exists;
+then
+  echo 'CURL_EXISTS = true' >> Makefile
+else
+  echo 'CURL_EXISTS = false' >> Makefile
+fi
+if $zlib_exists;
+then
+  echo 'ZLIB_EXISTS = true' >> Makefile
+else
+  echo 'ZLIB_EXISTS = false' >> Makefile
+fi
+tail -n+10 Makefile.in >> Makefile
+
+echo
+echo 'Configuration complete, type make to build.'
