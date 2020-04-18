@@ -11,13 +11,13 @@
 
 If the requirements specified [here](requirements.md) are being met, you
 may continue with the installation of `pfamannot`.
-First of all, download the [archive](https://github.com/hamalcij/pfamannot/archive/move.zip)
+First of all, download the [archive](https://github.com/hamalcij/pfamannot/archive/master.zip)
 with `pfamannot`'s source from GitLab, navigate to your Downloads folder,
-extract the tar.gz file and change current directory to the extracted
+extract the .zip file and change current directory to the extracted
 folder by typing into the command line:
 ```
-tar -zxvf hamalcik-devel.tar.gz
-cd hamalcik-devel
+unzip pfamannot-master.zip
+cd pfamannot-master
 ```
 
 Next you will run the `configure` executable, which will prepare the
@@ -50,7 +50,7 @@ make clean
 make cleandep
 ```
 
-To uninstall `pfamannot`, navigate to the `hamalcik-devel` directory
+To uninstall `pfamannot`, navigate to the `pfamannot-master` directory
 and simply type
 ```
 sudo make uninstall
