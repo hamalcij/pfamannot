@@ -2,7 +2,7 @@
 [//]: # (Protein Family Annotator)
 [//]: # ()
 [//]: # (docs/development/architecture.md)
-[//]: # (Copyright (c) 2020 Jan Hamalčík)
+[//]: # (Copyright © 2020 Jan Hamalčík)
 [//]: # ()
 [//]: # (Programmer's documentation of Architecture class)
 [//]: # ()

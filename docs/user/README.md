@@ -2,7 +2,7 @@
 [//]: # (Protein Family Annotator)
 [//]: # ()
 [//]: # (docs/user/README.md)
-[//]: # (Copyright (c) 2020 Jan Hamalčík)
+[//]: # (Copyright © 2020 Jan Hamalčík)
 [//]: # ()
 [//]: # (Starting point for docs/user directory)
 [//]: # ()

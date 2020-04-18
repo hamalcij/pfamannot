@@ -2,7 +2,7 @@
 [//]: # (Protein Family Annotator)
 [//]: # ()
 [//]: # (docs/user/theory.md)
-[//]: # (Copyright (c) 2020 Jan Hamalčík)
+[//]: # (Copyright © 2020 Jan Hamalčík)
 [//]: # ()
 [//]: # (Gives theoretical info about proteins, domains and databases)
 [//]: # ()

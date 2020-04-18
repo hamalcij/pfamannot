@@ -2,7 +2,7 @@
 [//]: # (Protein Family Annotator)
 [//]: # ()
 [//]: # (docs/install/installation.md)
-[//]: # (Copyright (c) 2020 Jan Hamalčík)
+[//]: # (Copyright © 2020 Jan Hamalčík)
 [//]: # ()
 [//]: # (Guide to install pfamannot)
 [//]: # ()
