@@ -34,4 +34,4 @@ SOFTWARE.
 #define VERSION_MAJOR §major§
 #define VERSION_MINOR §minor§
 #define VERSION_PATCH §patch§
-#define HOME_DIRECTORY §home§
+#define HOME_DIRECTORY "§home§"
