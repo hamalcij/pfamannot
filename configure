@@ -11,7 +11,7 @@
 
 version_major=0
 version_minor=1
-version_patch=4
+version_patch=5
 
 echo "Welcome to pfamannot - Protein Family Annotator! Version ${version_major}.${version_minor}.${version_patch}"
 echo "Configuring..."
@@ -180,12 +180,14 @@ fi
 ##################################
 # Create pfamannotConfig.hpp
 
-cat source/pfamannotConfig.hpp.in |
-sed 's/pfamannotConfig.hpp.in/pfamannotConfig.hpp/' |
-sed 's/§major§/'$version_major'/' |
-sed 's/§minor§/'$version_minor'/' |
-sed 's/§patch§/'$version_patch'/' |
-sed 's|§home§|"'$HOME'"|' > source/pfamannotConfig.hpp
+awk -v NEWFILENAME="pfamannotConfig.hpp" -v MAJOR="$version_major" -v MINOR="$version_minor" -v PATCH="$version_patch" -v HOME="$HOME" '{
+  sub(/pfamannotConfig.hpp.in/, NEWFILENAME);
+  sub(/§major§/, MAJOR);
+  sub(/§minor§/, MINOR);
+  sub(/§patch§/, PATCH);
+  sub(/§home§/, HOME);
+  print;
+}' source/pfamannotConfig.hpp.in > source/pfamannotConfig.hpp
 
 ##################################
 # Create Makefile
